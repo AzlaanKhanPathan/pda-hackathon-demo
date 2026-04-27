@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Karnataka Heritage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/destinations.css">
+</head>
+<body>
+    
+    <!-- Include same navigation as index.html -->
+    <nav class="navbar">
+        <!-- Same navbar code -->
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Explore Destinations</h1>
+            <p>Discover Karnataka's heritage sites, temples, forts, and natural wonders</p>
+        </div>
+    </section>
+
+    <!-- FILTER SECTION -->
+    <section class="filters">
+        <div class="container">
+            <h3>Filter Destinations</h3>
+            
+            <div class="filter-controls">
+                <!-- Category Filter -->
+                <div class="filter-group">
+                    <label>Category:</label>
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="temple">Temples</option>
+                        <option value="fort">Forts & Palaces</option>
+                        <option value="nature">Nature & Wildlife</option>
+                        <option value="beach">Beaches</option>
+                        <option value="unesco">UNESCO Sites</option>
+                    </select>
+                </div>
+
+                <!-- Region Filter -->
+                <div class="filter-group">
+                    <label>Region:</label>
+                    <select id="regionFilter">
+                        <option value="all">All Regions</option>
+                        <option value="north">North Karnataka</option>
+                        <option value="south">South Karnataka</option>
+                        <option value="coastal">Coastal Karnataka</option>
+                        <option value="malnad">Malnad</option>
+                    </select>
+                </div>
+
+                <!-- Search Box -->
+                <div class="filter-group">
+                    <input type="text" id="searchBox" placeholder="Search destinations...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESTINATIONS GRID -->
+    <section class="destinations-listing">
+        <div class="container">
+            <div id="destinationsGrid" class="destinations-grid">
+                <!-- Cards will be dynamically loaded via JavaScript -->
+                <!-- Static placeholder example: -->
+                
+                <div class="destination-card" data-category="unesco" data-region="north">
+                    <div class="card-image">
+                        <img src="assets/images/destinations/hampi.jpg" alt="Hampi">
+                        <div class="card-badge">UNESCO Site</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Hampi</h3>
+                        <p class="location">📍 Vijayanagara District</p>
+                        <p class="description">Ruins of the Vijayanagara Empire with 500+ monuments</p>
+                        <div class="card-meta">
+                            <span class="rating">⭐ 4.8</span>
+                            <span class="visitors">👥 2M+ visitors/year</span>
+                        </div>
+                        <a href="destination-detail.html?id=hampi" class="btn btn-small">View Details</a>
+                    </div>
+                </div>
+
+                <!-- More cards will be added via JS -->
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more">
+                <button id="loadMoreBtn" class="btn btn-secondary">Load More Destinations</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer">
+        <!-- Same footer code -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/destinations.js"></script>
+    <script src="js/filter.js"></script>
+</body>
+</html>
